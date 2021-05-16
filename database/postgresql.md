@@ -4,13 +4,19 @@
 
 ## Installing using Docker [#ref](https://hub.docker.com/_/postgres/)
 
-Step 1: create a postgres bridge network **_database-network_**
+Step 1: pull postgres image
+
+```
+  docker pull postgres
+```
+
+Step 2: create a postgres bridge network **_database-network_**
 
 ```
   docker network create database-network
 ```
 
-Step 2: create a postgres container **_container-postgresdb_**
+Step 3: create a postgres container **_container-postgresdb_**
 
 ```
   docker run  --detach \
@@ -19,10 +25,10 @@ Step 2: create a postgres container **_container-postgresdb_**
     --publish 5432:5432 \
     --env POSTGRES_USER=postgres \
     --env POSTGRES_PASSWORD=admin \
-      postgres:12.1
+      postgres
 ```
 
-Step 3: create a pgadm container **_container-pgadm_**
+Step 4: create a pgadm container **_container-pgadm_**
 
 ```
   docker run --detach \
