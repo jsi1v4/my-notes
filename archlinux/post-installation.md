@@ -22,7 +22,7 @@ Apos logar como _root_. Seguir os passos:
 
 - `pacman -S sudo zsh`
 - `EDITOR=nano visudo`: descomentar linha do grupo _%wheel_ (usamos o grupo _wheel_ como sudoers).
-- `useradd -m -G wheel -s /bin/zsh joseph`
+- `useradd -m -G wheel,video,audio,storage -s /bin/zsh joseph`
 - `passwd joseph`
 - `exit`: sair e logar como _joseph_.
 
@@ -33,4 +33,11 @@ Apos logar como _root_. Seguir os passos:
 - `git clone https://github.com/jsi1v4/dotfiles.git ~/projects/my/dotfiles`: clone my dotfiles.
 - `sh ~/projects/my/dotfiles/install.sh`: install my dotfiles.
 - `sudo pacman -S - < ~/.my-packages`: install my packages.
+
+## Nvidia config
+
+> Verificar busID com `lspci`.
+
+- `sudo nvidia-xconfig --busid=PCI:9:0:0`
+- `sudo mkinitcpio -P`: update the initramfs image.
 - `sudo reboot now`: reboot para aplicar configuracao.
