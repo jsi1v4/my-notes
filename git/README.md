@@ -1,3 +1,3 @@
 # Git
 
-- [Useful commands](useful-cmd)
+- [Useful commands](useful-cmd.md)
