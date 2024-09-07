@@ -6,3 +6,7 @@ My linux config and notes.
 - [Post Installation](post-installation.md)
 - [Pacman](pacman.md)
 - [Fix Windows Boot](fix-win-boot.md)
+
+---
+
+Keep calm and code on 🤘.

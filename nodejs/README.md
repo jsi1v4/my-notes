@@ -12,3 +12,7 @@ As an asynchronous event-driven JavaScript runtime, Node.js is designed to build
 - [V8](v8.md)
 
 ## Blocking vs Non-Blocking
+
+---
+
+Keep calm and code on 🤘.
